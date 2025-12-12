@@ -80,8 +80,13 @@
   "relationships": [
     {
       "from": "UserAdmin",
-      "to": "InsuranceDocument",
+      "to": "UserData",
       "type": "OneToOne"
+    },
+    {
+      "from": "UserAdmin",
+      "to": "InsuranceDocument",
+      "type": "OneToMany"
     }
   ]
 }
