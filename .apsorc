@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "name": "InsuranceDocument",
+      "created_at": false,
+      "updated_at": false,
+      "fields": [
+        {
+          "name": "documentData",
+          "type": "text",
+          "nullable": false
+        },
+        {
+          "name": "parsedData",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "LLMsUsed",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "CRUDInterface",
+          "type": "text",
+          "nullable": true
+        }
+      ]
+    }
+  ],
+  "relationships": [],
+  "_removedEntities": []
+}
