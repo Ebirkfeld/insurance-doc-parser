@@ -36,6 +36,11 @@
           "name": "documentID",
           "type": "text",
           "nullable": false
+        },
+        {
+          "name": "isValid",
+          "type": "boolean",
+          "nullable": false
         }
       ]
     },
