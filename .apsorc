@@ -26,8 +26,62 @@
           "nullable": true
         }
       ]
+    },
+    {
+      "name": "UserAdmin",
+      "created_at": false,
+      "updated_at": false,
+      "fields": [
+        {
+          "name": "documentID",
+          "type": "text",
+          "nullable": false
+        }
+      ]
+    },
+    {
+      "name": "UserData",
+      "created_at": false,
+      "updated_at": false,
+      "fields": [
+        {
+          "name": "userDataField",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "FNAME",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "LNAME",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "EMAIL",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "SSN",
+          "type": "text",
+          "nullable": true
+        },
+        {
+          "name": "TITLE",
+          "type": "text",
+          "nullable": true
+        }
+      ]
     }
   ],
-  "relationships": [],
-  "_removedEntities": []
+  "relationships": [
+    {
+      "from": "UserAdmin",
+      "to": "InsuranceDocument",
+      "type": "OneToOne"
+    }
+  ]
 }
